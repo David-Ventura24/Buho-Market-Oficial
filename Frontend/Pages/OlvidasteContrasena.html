@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Recuperar Contraseña</title>
+  <link rel="stylesheet" href="../Css/RecuperarContraseña.css">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="contenedor2">
+    <div class="logo-container2">
+      <img src="../Img/Interrogacion.png" alt="Logo" class="logo-img2"> 
+    </div>
+
+  <div class="contenedor">
+    <div class="logo-container">
+      <img src="../Img/Buho_pensando.png" alt="Logo" class="logo-img"> 
+    </div>
+
+ 
+</div>
+
+
+    <h1 class="p1">BUHO</h1>
+    <h1 class="p2">MARKET</h1>
+
+    <div class="formulario">
+      <h1>Recuperar contraseña</h1>
+      <form method="post" action="http://localhost:3000/enviarCorreoRecuperacion">
+        <div class="correo">
+          <input type="email" name="correo" required
+                 pattern="[a-zA-Z0-9._%+-]+@uca\.edu\.sv$"
+                 title="Debe ser un correo institucional @uca.edu.sv">
+          <label>Correo institucional</label>
+        </div>
+
+        <button type="submit" class="btn-iniciar">Mandar correo</button>
+        <button type="button" class="btn-registrarme" onclick="window.location.href='../Index.html'">
+          Ir a Inicio
+        </button>
+      </form>
+    </div>
+
+  </div>
+      <script src="../Js/EfectoParpadeo.js"></script>
+</body>
+</html>

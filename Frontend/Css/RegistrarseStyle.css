@@ -1,0 +1,230 @@
+/* Estilos generales del cuerpo */
+body {
+  margin: 0;
+  padding: 0;
+  background: #000000;
+  font-family: 'Big Shoulders Display', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: white;
+  background-image: radial-gradient(circle at center, #1a1a1a 0%, #000000 70%);
+  user-select: none;
+  overflow: hidden;
+}
+
+/* Contenedor del formulario */
+.formulario {
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  padding: 20px;
+  margin: -70px auto 0 auto;
+  color: white;
+  z-index: 10;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow:
+    0 0 20px rgba(255, 255, 255, 0.2),
+    0 0 40px rgba(255, 255, 255, 0.1),
+    inset 0 0 15px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  user-select: none;
+}
+
+.formulario:hover {
+  border-color: rgba(255, 255, 255, 1);
+  box-shadow:
+    0 0 20px rgba(255, 255, 255, 0.5),
+    0 0 40px rgba(255, 255, 255, 0.3);
+}
+
+/* Título del formulario */
+.formulario h1 {
+  text-align: center;
+  font-family: 'Big Shoulders Display', sans-serif;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  color: #ffffff;
+  user-select: none;
+}
+
+/* Estilo para todos los campos del formulario */
+form .nombre,
+form .correo,
+form .contrasena,
+form .confirmar-contrasena {
+  position: relative;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+  margin: 15px 0;
+  transition: border-color 0.3s ease;
+  user-select: none;
+}
+
+/* Estilo de los inputs */
+form input {
+  width: 100%;
+  padding: 10px 5px;
+  height: 40px;
+  font-size: 18px;
+  border: none;
+  background: transparent;
+  outline: none;
+  color: rgb(255, 255, 255);
+  font-family: 'Big Shoulders Display', sans-serif;
+}
+
+/* Estilo de las etiquetas flotantes */
+form label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: rgba(208, 208, 208, 0.8);
+  transform: translateY(-50%);
+  font-size: 18px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+
+/* Efecto cuando el input está enfocado o tiene valor */
+form input:focus ~ label,
+form input:valid ~ label {
+  top: -5px;
+  font-size: 14px;
+  color: #ffffff;
+  text-shadow: 0 0 12px rgba(255, 255, 255, 0.8);
+}
+
+/* Botón principal (Registrarse) */
+.btn-iniciar {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 16px;
+  user-select: none;
+}
+
+.btn-iniciar:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* Botón secundario (Ir a login) */
+.btn-registrarme {
+  background-color: transparent;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-size: 16px;
+  user-select: none;
+}
+
+.btn-registrarme:hover {
+  background-color: #ffffff;
+  color: #000;
+}
+
+/* Estilos para enlaces (opcional, por si añades "Términos" después) */
+.acciones a {
+  margin-top: 20px;
+  display: block;
+  text-align: center;
+  color: rgb(194, 191, 191);
+  text-decoration: none;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
+  font-size: 14px;
+}
+
+.acciones a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Títulos decorativos */
+.p1 {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 900;
+  font-size: 100px;
+  color: #d0d0d0;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: 1.0;
+  letter-spacing: 1px;
+  text-shadow: 0 0 10px rgb(95, 95, 95), 0 0 20px #4b4b4b, 0 0 40px rgb(0, 0, 0);
+  z-index: 2;
+  right: 73px;
+  top: -65px;
+  position: relative;
+  user-select: none;
+}
+
+.p2 {
+  font-family: 'Big Shoulders Display', sans-serif;
+  font-weight: 900;
+  font-size: 115px;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  line-height: 1.0;
+  text-shadow: 0 0 10px white, 0 0 20px #ccc, 0 0 40px white;
+  z-index: 2;
+  top: -80px;
+  position: relative;
+  user-select: none;
+}
+
+/* Logo */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+  z-index: 2;
+}
+
+.logo-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  position: relative;
+  top: 35px;
+  left: 70px;
+  user-select: none;
+}
+
+
+/* Ocultar scrollbar visualmente, pero permitir scroll */
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;  
+  overflow-y: scroll;        
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
