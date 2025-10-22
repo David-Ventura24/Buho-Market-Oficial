@@ -1,4 +1,4 @@
-/* === ESTILOS BASE (igual que antes, pero sin overflow: hidden) === */
+
 body {
   margin: 0;
   padding: 0;
@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Cambiado: permite scroll */
+  justify-content: flex-start;
   min-height: 100vh;
   color: white;
   background-image: radial-gradient(circle at center, #1a1a1a 0%, #000000 70%);

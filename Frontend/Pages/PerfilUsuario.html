@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Perfil - Marketplace UCA</title>
+  <!-- Fuente opcional para elegancia -->
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../Css/PerfilUsuario.css">
+</head>
+<body>
+
+<header>
+  <div class="header-contenido">
+    <img src="../Img/new_logo.jpeg" alt="Logo Marketplace UCA" class="logo" width="40" height="40">
+    <h1>Perfil de usuario</h1>
+  </div>
+</header>
+
+  <main>
+
+    <!-- Resumen del usuario -->
+    <section aria-labelledby="resumen-usuario">
+      <h2 id="resumen-usuario">🪪 Resumen del usuario</h2>
+      <article>
+        <img src="../Img//Buho_pensando.png" alt="" width="110" height="110">
+        <div>
+          <h3 class="nombre-usuario">[Nombre completo]</h3>
+          <p><strong>Carrera o facultad:</strong> [Carrera]</p>
+          <p><strong>Descripción breve:</strong> [Descripción personal]</p>
+          <button>Editar perfil</button>
+          <span aria-label="Cuenta verificada por la UCA" title="Cuenta verificada UCA">✅ Cuenta verificada UCA</span>
+        </div>
+      </article>
+    </section>
+
+    <!-- Mis publicaciones -->
+    <section aria-labelledby="mis-publicaciones">
+      <h2 id="mis-publicaciones">🛍️ Mis publicaciones</h2>
+
+      <div class="filtros-estado">
+        <label><input type="radio" name="filtro-estado" value="todos" checked> Todos</label>
+        <label><input type="radio" name="filtro-estado" value="disponible"> Disponibles</label>
+        <label><input type="radio" name="filtro-estado" value="vendido"> Vendidos</label>
+        <label><input type="radio" name="filtro-estado" value="pausado"> Pausados</label>
+      </div>
+
+      <div id="lista-publicaciones">
+        <!-- 
+          Publicaciones dinámicas se insertarán aquí.
+          Estructura esperada:
+          <article class="publicacion" data-id="[ID]">
+            <img src="[URL]" alt="[Producto]">
+            <div>
+              <h3>[Título]</h3>
+              <p><strong>Precio:</strong> [Precio]</p>
+              <p><strong>Estado:</strong> <span class="estado [disponible|vendido|pausado]">[Texto]</span></p>
+              <div class="acciones-publicacion">
+                <button class="btn-editar">Editar</button>
+                <button class="btn-eliminar">Eliminar</button>
+                <button class="btn-vendido">Marcar como vendido</button>
+                <button class="btn-pausar">Pausar publicación</button>
+              </div>
+            </div>
+          </article>
+        -->
+        <p id="mensaje-sin-publicaciones">No tienes publicaciones aún.</p>
+      </div>
+
+      <button id="btn-agregar-producto">Agregar nuevo producto</button>
+    </section>
+
+    <!-- Reputación -->
+    <section aria-labelledby="reputacion">
+      <h2 id="reputacion">⭐ Reputación</h2>
+      <div>
+        <p><strong>Calificación promedio:</strong> <span id="calificacion-promedio">[0.0]</span></p>
+        <p><strong>Ventas exitosas:</strong> <span id="ventas-exitosas">[0]</span></p>
+
+        <h3>Comentarios recientes</h3>
+        <div id="comentarios-recientes">
+          <!-- Comentarios dinámicos aquí -->
+          <p id="sin-comentarios">Aún no tienes calificaciones.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Configuración de cuenta (simplificada) -->
+    <section aria-labelledby="configuracion-cuenta">
+      <h2 id="configuracion-cuenta">⚙️ Configuración de cuenta</h2>
+      <div class="config-opciones">
+        <button>Cambiar contraseña</button>
+        <button>Eliminar cuenta</button>
+        <button>Cerrar sesión</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p> 2025 Buho Market. Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
